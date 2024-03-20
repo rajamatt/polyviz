@@ -12,11 +12,6 @@ from d3blocks import D3Blocks
 from .utils import check_filepath
 
 try:
-    from bw2data.backends.peewee import Activity as PeeweeActivity
-except ImportError:
-    PeeweeActivity = None
-
-try:
     from bw2data.backends import Activity as BW25Activity
 except ImportError:
     BW25Activity = None
@@ -45,7 +40,7 @@ def violin(
 
     for act in activities:
         assert isinstance(
-            act, Union[PeeweeActivity, BW25Activity]
+            act, BW25Activity
         ), "`activity` should be a brightway2 activity."
 
     def make_name(activities):
