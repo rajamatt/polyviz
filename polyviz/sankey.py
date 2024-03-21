@@ -25,7 +25,7 @@ def sankey(
     filepath: str = None,
     title: str = None,
     notebook: bool = False,
-) -> str:
+):
     """
     Generate a Sankey diagram for a given activity and method.
     :param activity: Brightway2 activity
@@ -73,7 +73,7 @@ def sankey(
 
     # Create a new D3Blocks object
     d3_graph = D3Blocks()
-    d3_graph.sankey(
+    html = d3_graph.sankey(
         df=dataframe[1:],
         link={"color": "source-target"},
         title=title,
@@ -83,4 +83,4 @@ def sankey(
         figsize=figsize,
     )
 
-    return str(filepath)
+    return html
