@@ -59,6 +59,7 @@ def treemap(
         df=dataframe,
         title=title,
         filepath=filepath,
+        showfig=False,
         notebook=notebook,
         figsize=figsize,
     )

@@ -88,6 +88,7 @@ def violin(
         x=dataframe["name"].values,
         y=dataframe["val"].values,
         unit=unit,
+        showfig=False,
         bins=50,  # Bins used for the histogram
         figsize=[None, None],  # Figure size is automatically determined.
         filepath=filepath,  # Path to save the HTML file

@@ -77,6 +77,7 @@ def sankey(
         df=dataframe[1:],
         link={"color": "source-target"},
         title=title,
+        showfig=False,
         filepath=filepath,
         notebook=notebook,
         figsize=figsize,

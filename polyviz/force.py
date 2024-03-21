@@ -59,6 +59,7 @@ def force(
     d3_graph.d3graph(
         df=dataframe[1:],
         title=title,
+        showfig=False,
         filepath=filepath,
         notebook=notebook,
         figsize=figsize,

@@ -74,6 +74,7 @@ def chord(
         df=dataframe[1:],
         title=title,
         filepath=filepath,
+        showfig=False,
         notebook=notebook,
         figsize=figsize,
     )
