@@ -73,7 +73,7 @@ def sankey(
 
     # Create a new D3Blocks object
     d3_graph = D3Blocks()
-    html = d3_graph.sankey(
+    d3_graph.sankey(
         df=dataframe[1:],
         link={"color": "source-target"},
         title=title,
@@ -83,4 +83,4 @@ def sankey(
         figsize=figsize,
     )
 
-    return html
+    return str(filepath)
